@@ -9,24 +9,51 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+:root {
+	--header-bg-color: #39a6b2;
+	--header-h1-color: #fce138;
+	--header-link-color: #fce138;
+	--footer-bg-color: #fce138;
+	--footer-h2-color: #024e76;
+	--footer-link-color: #024e76;
+	--hero-form-color: #024e76;
+	--hero-form-bg-color: #fce138; 
+	--form-input-color: #024e76;
+	--form-btn-color: #fce138;
+	--form-btn-bg-color: #024e76; 
+	--intro-para-color: #39a6b2;
+	--white-color: white;
+	--trainer-bg-color: #024e76;
+	--trainer-color: #fce138;
+	--steps-para-color: #39a6b2;
+	--steps-h3-color: #024e76;
+	--primary-border-color: #fce138;
+	--secondary-border-color: #39a6b2;
+	--contact-bg-color: #024e76;
+	--contact-h2-color: #fce138;
+	--contact-info-h3-color: #fce138;
+	--contact-info-link-color: #fce138;
+	--steps-bg-color: #fce138;
+	--section-title-color: #024e76;
+}
 /* apply styles to <header> */
 
 header {
     padding: 20px 35px;
-    background-color: #39a6b2;
+    background-color: var(--header-bg-color);
 }
 
 header h1 {
     font-weight: bold;
     font-size:36px;
-    color: #fce138;
+    color: var(--header-h1-color);
     margin: 0;
     display: inline;
 }
 
 header a {
     text-decoration:none;
-    color: #fce138;
+    color: var(--header-link-color);
 }
 
 header nav {
@@ -45,14 +72,14 @@ header nav ul li a {
 }
 
 footer {
-    background: #fce138;
+    background: var(--footer-bg-color);
     width: 100%;
     padding: 40px 35px;
 }
 
 footer h2 {
     display: inline;
-    color: #024e76;
+    color: var(--footer-h2-color);
     font-size:30px;
     margin: 0;
 }
@@ -64,7 +91,7 @@ footer div {
 }
 
 footer a {
-    color: #024e76;
+    color: var(--footer-link-color);
 }
 
 section {
@@ -82,8 +109,8 @@ section {
 /* Hero Style End */
 
 .hero-form {
-    color: #024e76;
-    background-color: #fce138;
+    color: var(--hero-form-color);
+    background-color: var(--hero-form-bg-color);
     padding: 20px;
     width: 500px;
     border:solid 3px #024e76;
@@ -107,7 +134,7 @@ section h3 {
     display: block;
     font-size: 16px;
     padding: 7px 15px;
-    color: #024e76;
+    color: var(--form-input-color);
     width: 100%;
     margin-bottom: 15px;
 
@@ -118,8 +145,8 @@ section h3 {
 }
 
 form button {
-    color: #fce138;
-    background-color: #024e76;
+    color: var(--form-btn-color);
+    background-color: var(--form-btn-bg-color);
     padding: 10px 20px;
     font-size: 16px;
     border: none;
@@ -132,7 +159,7 @@ form button {
 
 .intro p {
     line-height: 1.7;
-    color: #39a6b2;
+    color: var(--intro-para-color);
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
@@ -140,13 +167,13 @@ form button {
 
 .steps {
     text-align: center;
-    background: #fce138;
+    background: var(--steps-bg-color);
 }
 
 
 .section-title {
     font-size: 55px;
-    color: #024e76;
+    color: var(--section-title-color);
     margin-bottom: 35px;
     padding: 0 100px 20px 100px;
     display: inline-block;
@@ -154,11 +181,11 @@ form button {
 }
 
 .primary-border {
-    border-color: #fce138;
+    border-color: var(--primary-border-color);
 }
 
 .secondary-border {
-    border-color: #39a6b2;
+    border-color: var(--secondary-border-color);
 }
 
 .steps div {
@@ -171,13 +198,13 @@ form button {
 }
 
 .steps h3 {
-    color: #024e76;
+    color: var(--steps-h3-color);
     font-size: 46px;
     margin-top: 10px;
 }
 
 .steps p {
-    color: #39a6b2;
+    color: var(--steps-para-color);
     font-size: 23px;
 }
 
@@ -192,8 +219,8 @@ form button {
 .trainer {
     width: 900px;
     margin: 0 auto 30px auto;
-    background: #024e76;
-    color: #fce138;
+    background: var(--trainer-bg-color);
+    color: var(--trainer-color);
     overflow: auto;
 }
 
@@ -235,12 +262,12 @@ form button {
 }
 
 .contact {
-    background-color: #024e76;
+    background-color: var(--contact-bg-color);
     text-align: center;
 }
 
 .contact h2 {
-    color: #fce138;
+    color: var(--contact-h2-color);
 }
 
 .contact-info iframe {
@@ -254,11 +281,11 @@ form button {
     vertical-align: top;
     text-align: left;
     margin: 30px 0 0 60px;
-    color: white;
+    color: var(--white-color);
 }
 
 .contact-info h3 {
-    color: #fce138;
+    color: var(--contact-info-h3-color);
     font-size: 32px;
 }
 
@@ -270,5 +297,5 @@ form button {
 }
 
 .contact-info a {
-    color:#fce138;
+    color: var(--contact-info-link-color);
 }
