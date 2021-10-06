@@ -24,7 +24,7 @@ header h1 {
     font-size:36px;
     color: #fce138;
     margin: 0;
-  
+    text-shadow: 0 0 10px rgba(0,0,0, 0.5);
 }
 
 header a {
@@ -49,6 +49,7 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.5vw;
+    text-shadow: 0 0 10px rgba(0,0,0, 0.5);
 }
 
 footer {
@@ -93,11 +94,13 @@ section {
 
 .hero-form {
     color: #024e76;
-    background-color: #fce138;
+    background-color: rgba(252,225,56, 0.8);
     padding: 20px;
     border:solid 3px #7d909b;
     width: 40%;
     margin: 3.5%;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.5);
+    border-radius: 15px;
 }
 
 .hero-cta {
@@ -113,6 +116,7 @@ section {
     font-style: italic;
     font-size: 55px;
     color: #fce138;
+    text-shadow: 0 0 10px rgba(0,0,0, 0.5);
 }
 
 section h3 {
@@ -124,6 +128,10 @@ section h3 {
     margin: 5px 0 15px 0;
 }
 
+.hero-form button {
+    border-radius: 10px;
+}
+
 .form-input {
     border: 1px solid #024e76;
     display: block;
@@ -132,6 +140,7 @@ section h3 {
     color: #024e76;
     width: 100%;
     margin-bottom: 15px;
+    border-radius: 10px;
 }
 
 .hero-form label {
@@ -331,6 +340,7 @@ form button {
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
+    border-radius: 10px;
 }
 
 .contact-form button {
@@ -341,6 +351,7 @@ form button {
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
+    border-radius: 10px;
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
