@@ -17,6 +17,14 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
 }
 
 header h1 {
@@ -50,6 +58,13 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 1.5vw;
     text-shadow: 0 0 10px rgba(0,0,0, 0.5);
+}
+
+header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
 }
 
 footer {
@@ -89,6 +104,8 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
 }
 /* Hero Style End */
 
@@ -132,6 +149,10 @@ section h3 {
     border-radius: 10px;
 }
 
+.hero-form button:hover {
+    background-color: #39a6b2;
+}
+
 .form-input {
     border: 1px solid #024e76;
     display: block;
@@ -141,6 +162,12 @@ section h3 {
     width: 100%;
     margin-bottom: 15px;
     border-radius: 10px;
+    background-color: rgba(255,255,255, 0.75);
+}
+
+.form-input:focus {
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;
 }
 
 .hero-form label {
@@ -229,10 +256,14 @@ form button {
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
-    border-bottom: 1px solid #39a6b2;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid #39a6b2;
+}
+
+.step:last-child {
+    border-bottom:none;
 }
 
 .trainers {
@@ -341,6 +372,12 @@ form button {
     margin-bottom: 15px;
     margin-top: 5px;
     border-radius: 10px;
+    background-color: rgba(255,255,255, 0.75); 
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
 }
 
 .contact-form button {
@@ -354,11 +391,17 @@ form button {
     border-radius: 10px;
 }
 
+.contact-form button:hover {
+    color: #fce138;
+    background: #39a6b2;
+}
+
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width:980px) {
     header {
         padding:0;
         justify-content:center;
+        position: relative;
     }
 
     header h1 {
